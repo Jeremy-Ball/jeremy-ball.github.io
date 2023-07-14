@@ -27,44 +27,40 @@ header {
 header h2 {
     font-size: 250%;
     color: black;
-    padding: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 3em;
     margin: 0em 0em 0em 0em;
     float: left;
 }
 header h3 {
     font-size: 130%;
     color: black;
-    padding: 1em 1em 0em 1em;
+    padding: 1em 3em 0em 1em;
     float: right;
+}
+/* Styles for the aside (nav bar) */
+aside img {
+    float: right;
+    padding: 1em 1em;
 }
 /* Styles for right article */
 article {
     float: right;
-    width: 60%;
+    width: 40%;
     margin: 0em;
-    padding: 0em 0em 0em 0em;
+    padding: 5em 10em 5em 0em;
 }
 article h3 {
     text-align: center;
     font-size: 150%;
 }
 article p {
-    font-size: 120%;
-    margin: 0em 4em .25em;
+    font-size: 90%;
+    margin: 0em 1em .25em;
 }
 article blockquote {
     font-size: 120%;
-    padding: 0 6em .25em; 
+    padding: 0 4em .25em; 
     color: green;
-}
-/* Styles for the aside (nav bar) */
-aside {
-    width: 39%;
-    margin: 0em;
-    padding: 0em;
-}
-aside img {
-    padding: 1em 5em;
 }
 /* Styles for the section (navigation) */
 section {

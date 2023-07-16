@@ -8,7 +8,6 @@ html {
 }
 body {
     font-family: Garamond, serif;
-    font-size: 100%;
     width: 1200px;
     margin: 2em auto;
     padding: 0em 2em;
@@ -17,6 +16,9 @@ body {
 }
 a:focus, a:hover {
     font-style: bold;
+}
+h1 {
+    text-align: center;
 }
 /* Styles for the header */
 header {
@@ -37,53 +39,92 @@ header h3 {
     padding: 1em 3em 0em 1em;
     float: right;
 }
-/* Styles for the aside (nav bar) */
-aside {
-    width: 50%;
-}
-aside img {
-    max-width: 60%;
-    float: right;
-    padding: 1em 1em;
-}
 /* Styles for right article */
 article {
+    text-align: center;
+    width: 580px;
     float: right;
-    width: 40%;
+    height: 1200px;
     margin: 0em;
-    padding: 5em 10em 5em 0em;
+    padding: 0em;
+    border: 1px dotted black;
 }
 article h3 {
     text-align: center;
     font-size: 150%;
+    padding: .5em 0em;
 }
 article p {
+    text-align: center;
     font-size: 90%;
-    margin: 0em 1em .25em;
+    padding: 0em 0em .5em;
+    margin: 0em;
 }
-article blockquote {
-    font-size: 120%;
-    padding: 0 4em .25em; 
-    color: green;
+article img {
+    border: 3px solid white;
+    padding: 1em;
+}
+/* Styles for the aside (nav bar) */
+aside {
+    text-align: center;
+    width: 580px;
+    float: left;
+    margin: 0em;
+    padding: 0em;
+    height: 1200px;
+    border: 1px dotted black;
+}
+aside h3 {
+    text-align: center;
+    font-size: 150%;
+    padding: .5em 0em;
+}
+aside p {
+    text-align: center;
+    font-size: 90%;
+    padding: 0em 0em .5em;
+    margin: 0;
+}
+aside img {
+    border: 3px solid white;
+    padding: 1em;
+}
+/* styles for the 2nd aside */
+div h3 {
+    text-align: center;
+    font-size: 150%;
+    padding: .5em 0em;
+}
+div {
+    clear: both;
+    text-align: center;
+    width: 100%;
+    margin: 0em;
+    padding: 0em;
+    height: 350px;
+    border: 1px dotted black;
+}
+div p {
+    float: left;
+    width: 30%;
+    padding: 0em 0em 0em 14em;
+}
+div img {
+    float: right;
+    padding: 0em 6em 0em .5em;
 }
 /* Styles for the section (navigation) */
 section {
     clear: both;
     text-align: center;
     padding: 1em 0em 5em 0em;
-}
-section h2 {
+    border: 1px dotted black;
 }
 section h3 {
     float: left;
     margin: 20px 0px 0px 250px;
 }
-section p {
-}
 /* Styles for the footer */
-footer {
-    clear: both;
-}
 footer p {
     text-align: center; 
     color: black;
@@ -106,7 +147,7 @@ footer p {
     }
     aside img { 
         float: left;
-        max-width: 45%;
+        max-width: 60%;
         padding: 1em 1em;
         margin: 0;
     }
@@ -161,7 +202,7 @@ footer p {
         float: none;
         padding: .5em 1em 0em;
     }
-    article {
+        article {
         float: right;
         width: 70%;
         margin: 0;
@@ -177,8 +218,8 @@ footer p {
 	}
     aside img { 
         float: left;
-        max-width: 50%;
-        padding: 2em .5em .5em;
+        max-width: 74%;
+        padding: 1em 0em;
         margin: 0;
     }
     section {

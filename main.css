@@ -170,11 +170,16 @@ footer p {
 	article h2, article h3 {
 		font-size: 80%;
 	}
-	article p, article blockquote {
+	article p {
 		font-size: 65%;
         margin: 0em;
         padding: 0em;
 	}
+    article blockquote {
+        font-size: 95%;
+        margin: 0em;
+        padding: .5em .5em;
+    }
     aside img { 
         float: left;
         max-width: 50%;

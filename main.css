@@ -259,6 +259,7 @@ footer p {
         
     }
     header {
+        width: 100%;
         height: 4.5em;
         padding: .5em 0em 0em;
 
@@ -310,7 +311,7 @@ footer p {
         margin: 0% 0% 0% 50%;
         padding: 0;
         position: absolute;
-        top: 25%;
+        top: 27%;
     }
     section h2 {
         margin: 1em 0;

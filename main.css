@@ -115,14 +115,9 @@ footer p {
     color: black;
 }
 @media only screen and (max-width: 1609px) {
-    body {
-
-        
-    }
     header {
         height: 3em;
         padding: 0em 1em 0em 1em;
-
     }
     header h2 {
         margin: 0;
@@ -152,22 +147,8 @@ footer p {
         margin: 0 auto;
         padding: 0;
     }
-
-	article h2, article h3 {
-
-	}
-	article p, article blockquote {
-
-	}
-    footer p {
-
-    }
 }
 @media only screen and (max-width: 1381px) {
-    body {
-
-        
-    }
     header {
         height: 3em;
         padding: 0em 1em;
@@ -216,65 +197,7 @@ footer p {
     float: left;
     margin: 0 0 0 20%;
 }
-@media only screen and (max-width: 1381px) {
-    body {
-
-        
-    }
-    header {
-        height: 3em;
-        padding: 0em 1em;
-
-    }
-    header h2 {
-        font-size: 190%;
-        margin: 0;
-        padding: 0;
-    }
-    header h3 {
-        font-size: 110%;
-        margin: 0% 0 0 50%;
-        padding: 0;
-        float: none;
-    }
-    aside img {
-        margin: 0;
-        padding: 5% 0% 5% 25%;
-    }
-    article {
-        width: 35%; 
-        margin: 3% 15% 3% 0%;
-    
-    }
-    article h3 {
-        font-size: 110%;
-    }
-    article p {
-        font-size: 90%;
-    }
-    article blockquote {
-        font-size: 100%;
-        padding: .25em 1em;
-        color: green;
-}
-    section {
-        height: 5em;
-        width: 50%;
-        margin: 0 auto;
-        padding: 0;
-    }
-    section h2 {
-}
-    section h3 {
-        font-size: 100%;
-        float: left;
-        margin: 0 0 0 15%;
-}
 @media only screen and (max-width: 900px) {
-    body {
-
-        
-    }
     header {
         height: 2em;
         padding: 0em 1em;
@@ -330,7 +253,7 @@ footer p {
         font-size: 100%;
         margin: 2% 0 0 5%;
 }
-    @media only screen and (max-width: 603px) {
+    @media only screen and (max-width: 620px) {
     body {
         padding: .5em;
         
@@ -388,7 +311,7 @@ footer p {
         margin: 0% 0% 0% 50%;
         padding: 0;
         position: absolute;
-        top: 15%;
+        top: 20%;
     }
     section h2 {
         margin: 1em 0;

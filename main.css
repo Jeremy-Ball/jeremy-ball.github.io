@@ -115,224 +115,220 @@ footer p {
     color: black;
 }
 @media only screen and (max-width: 1609px) {
-    header {
-        height: 3em;
-        padding: 0em 1em 0em 1em;
-    }
-    header h2 {
-        margin: 0;
-        padding: 0;
-    }
-    header h3 {
-        margin: .75em 0 0 0;
-        padding: 0;
-    }
-    aside img {
-        margin: 0;
-        padding: 5% 0% 5% 35%;
-    }
-    article {
-        width: 35%; 
-        margin: 3% 19% 3% 0%;
-    
-    }
-    article h3 {
-        font-size: 110%;
-    }
-    article p {
-        font-size: 90%;
-    }
-    section {
-        height: 5em;
-        margin: 0 auto;
-        padding: 0;
-    }
+  header {
+    height: 3em;
+    padding: 0em 1em 0em 1em;
+  }
+  header h2 {
+    margin: 0;
+    padding: 0;
+  }
+  header h3 {
+    margin: .75em 0 0 0;
+    padding: 0;
+  }
+  aside img {
+    margin: 0;
+    padding: 5% 0% 5% 35%;
+  }
+  article {
+    width: 35%;
+    margin: 3% 19% 3% 0%;
+  }
+  article h3 {
+    font-size: 110%;
+  }
+  article p {
+    font-size: 90%;
+  }
+  section {
+    height: 5em;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 1381px) {
-    header {
-        height: 3em;
-        padding: 0em 1em;
-
-    }
-    header h2 {
-        font-size: 190%;
-        margin: 0;
-        padding: 0;
-    }
-    header h3 {
-        font-size: 110%;
-        margin: 0% 0 0 50%;
-        padding: 0;
-        float: none;
-    }
-    aside img {
-        margin: 0;
-        padding: 5% 0% 5% 25%;
-    }
-    article {
-        width: 35%; 
-        margin: 3% 15% 3% 0%;
-    
-    }
-    article h3 {
-        font-size: 110%;
-    }
-    article p {
-        font-size: 90%;
-    }
-    article blockquote {
-        font-size: 100%;
-        padding: .25em 1em;
-        color: green;
-}
-    section {
-        height: 5em;
-        margin: 0 auto;
-        padding: 0;
-    }
-    section h2 {
-}
-    section h3 {
-        font-size: 100%;
+  header {
+    height: 3em;
+    padding: 0em 1em;
+  }
+  header h2 {
+    font-size: 190%;
+    margin: 0;
+    padding: 0;
+  }
+  header h3 {
+    font-size: 110%;
+    margin: 0% 0 0 50%;
+    padding: 0;
+    float: none;
+  }
+  aside img {
+    margin: 0;
+    padding: 5% 0% 5% 25%;
+  }
+  article {
+    width: 35%;
+    margin: 3% 15% 3% 0%;
+  }
+  article h3 {
+    font-size: 110%;
+  }
+  article p {
+    font-size: 90%;
+  }
+  article blockquote {
+    font-size: 100%;
+    padding: .25em 1em;
+    color: green;
+  }
+  section {
+    height: 5em;
+    margin: 0 auto;
+    padding: 0;
+  }
+  section h3 {
+    font-size: 100%;
     float: left;
     margin: 0 0 0 20%;
+  }
 }
 @media only screen and (max-width: 900px) {
-    header {
-        height: 2em;
-        padding: 0em 1em;
-
-    }
-    header h2 {
-        font-size: 150%;
-        margin: 0;
-        padding: 0;
-    }
-    header h3 {
-        font-size: 90%;
-        margin: 0% 0 0 40%;
-        padding: 0;
-        float: none;
-    }
-    aside img {
-        margin: 0;
-        padding: 5% 0% 5% 25%;
-    }
-    article {
-        width: 40%; 
-        margin: 3% 14% 3% 0%;
+  header {
+    height: 2em;
+    padding: 0em 1em;
+  }
+  header h2 {
+    font-size: 150%;
+    margin: 0;
+    padding: 0;
+  }
+  header h3 {
+    font-size: 90%;
+    margin: 0% 0 0 40%;
+    padding: 0;
+    float: none;
+  }
+  aside img {
+    margin: 0;
+    padding: 5% 0% 5% 25%;
+  }
+  article {
+    width: 40%;
+    margin: 3% 14% 3% 0%;
     
+  }
+  article h3 {
+    font-size: 110%;
+  }
+  article p {
+    font-size: 80%;
+    margin: 1%;
+  }
+  article blockquote {
+    font-size: 100%;
+    margin: .25em;
+    padding: 0;
+    color: green;
+  }
+  section {
+    float: left;
+    height: 7em;
+    width: 35%;
+    margin: 60% 0% 0% 5%;
+    padding: 0;
+    position: absolute;
+  }
+  section h2 {
+    margin: 0;
+    padding: 0;
     }
-    article h3 {
-        font-size: 110%;
-    }
-    article p {
-        font-size: 80%;
-        margin: 1%;
-    }
-    article blockquote {
-        font-size: 100%;
-        margin: .25em;
-        padding: 0;
-        color: green;
+  section h3 {
+    float: none;
+    font-size: 100%;
+    margin: 2% 0 0 5%;
+  }
 }
-    section {
-        float: left;
-        height: 7em;
-        width: 35%;
-        margin: 60% 0% 0% 5%;
-        padding: 0;
-        position: absolute;
-    }
-    section h2 {
-        margin: 0;
-        padding: 0;
-}
-    section h3 {
-        float: none;
-        font-size: 100%;
-        margin: 2% 0 0 5%;
-}
-    @media only screen and (max-width: 620px) {
-    body {
-        padding: .5em;
+@media only screen and (max-width: 620px) {
+  body {
+    padding: .5em;
         
-    }
-    header {
-        width: 100%;
-        height: 4.5em;
-        padding: .5em 0em 0em;
+  }
+  header {
+    width: 100%;
+      height: 4.5em;
+      padding: .5em 0em 0em;
 
-    }
-    header h2 {
-        float: none;
-        text-align: center;
-        font-size: 150%;
-        margin: 0;
-        padding: 0;
-    }
-    header h3 {
-        float: none;
-        text-align: center;
-        font-size: 90%;
-        margin: 2.5% 0 0 0%;
-        padding: 0;
-        float: none;
-    }
-    aside img {
-        float: none;
-        max-width:90%;
-        margin: 0 10%;
-        padding: 0;
-    }
-    article {
-        float: none;
-        width: 100%;
-        padding: 3% 0;
-        margin: 0% 0% 0% 0%;
-    }
-    article h3 {
-        font-size: 110%;
-    }
-    article p {
-        font-size: 80%;
-        margin: 1%;
-    }
-    article blockquote {
-        font-size: 100%;
-        margin: .25em;
-        padding: 0;
-        color: green;
-    }
-    section {
-        float: none;
-        height: 18em;
-        width: 35%;
-        margin: 0% 0% 0% 50%;
-        padding: 0;
-        position: absolute;
-        top: 27%;
-    }
-    section h2 {
-        margin: 1em 0;
-        padding: 0;
-    }
-    section h3 {
-        float: none;
-        font-size: 100%;
-        margin: 20% 0 0 5%;
+  }
+  header h2 {
+    float: none;
+    text-align: center;
+    font-size: 150%;
+    margin: 0;
+    padding: 0;
+  }
+  header h3 {
+    float: none;
+    text-align: center;
+    font-size: 90%;
+    margin: 2.5% 0 0 0%;
+    padding: 0;
+    float: none;
+  }
+  aside img {
+    float: none;
+    max-width:90%;
+    margin: 0 10%;
+    padding: 0;
+  }
+  article {
+    float: none;
+    width: 100%;
+    padding: 3% 0;
+    margin: 0% 0% 0% 0%;
+  }
+  article h3 {
+    font-size: 110%;
+  }
+  article p {
+    font-size: 80%;
+    margin: 1%;
+  }
+  article blockquote {
+    font-size: 100%;
+    margin: .25em;
+    padding: 0;
+    color: green;
+  }
+  section {
+    float: none;
+    height: 18em;
+    width: 35%;
+    margin: 0% 0% 0% 50%;
+    padding: 0;
+    position: absolute;
+    top: 27%;
+  }
+  section h2 {
+    margin: 1em 0;
+    padding: 0;
+  }
+  section h3 {
+    float: none;
+    font-size: 100%;
+    margin: 20% 0 0 5%;
+  }
 }
-    @media only screen and (max-width: 380px) {
-        
-        header {
-            height: 5.5em;
-        }
-        section {
-            height: 15em;
-        }
+@media only screen and (max-width: 380px) {
+  header {
+    height: 5.5em;
+    }
+  section {
+    height: 15em;
+    }
 }
-        @media only screen and (max-width: 380px) {
-            section {
-                height: 14em;
-            }
+@media only screen and (max-width: 380px) {
+  section {
+    height: 14em;
+    }
 }

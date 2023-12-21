@@ -1,6 +1,7 @@
 /* Styles for the elements */
 html {
-  background-color: darkgreen;
+  height: 100%;
+  background: linear-gradient(to top, seagreen 0%, slategray 100%)
 }
 body {
   font-family: Garamond, serif;
@@ -8,25 +9,25 @@ body {
   width: 2500px;
   margin: 1% auto;
   padding: .5em 0;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 25px;
+  box-shadow: 10px 10px 10px;
 }
 a:focus, a:hover {
   font-style: italic;
 }
 /* Styles for the header */
 header {
+  font-family: 'Castoro Titling';
   float: left;
   width: 700px;
   margin: 0 0 0 20%;
   padding: 8px 0 8px 0;
-  /*background-color: lightgray;
-  border-radius: 10px;*/
 }
 header h2 {
   float: left;
   font-size: 220%;
-  color: black;
+  color: darkslategray;
   margin: 1% 0 0 30%;
   padding: 0;
 }
@@ -36,6 +37,9 @@ nav {
   width: 700px;
   margin: 0 15% 0 0;
   padding: 23px 0 23px 0;
+  font-weight: bold;
+  color: darkslategray;
+  
 }
 nav p {
   float: right;
@@ -48,6 +52,9 @@ h1 {
   height: 100%;
   width: 700px;
   margin: 1% 0 0 48%;
+  background: linear-gradient(to right, black 1%, seagreen 70%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 /* Styles for the picture */
 picture {
@@ -68,21 +75,20 @@ article {
   margin: 3% 15% 2.5% 0;
   padding: 0;
 }
-article h2 {
-  font-size: 110%;
-  margin: 10px 0 80px 0;
-  padding: 0;
-}
 article h3 {
   text-align: left;
   font-size: 150%;
   margin: 10px 0;
+  color: black;
+  font-weight: bolder;
 }
 article p {
   font-size: 80%;
   margin: 10px 200px 0 0;
   position: relative;
   z-index: 3;
+  color: darkslategrey;
+  font-weight: 200;
 }
 article blockquote {
   font-size: 120%;
@@ -162,7 +168,8 @@ footer p {
 }
 @media only screen and (max-width: 1750px) {
   nav p {
-    margin: 0 5% 0 0;
+    float: right;
+    margin: 0 10% 0 0;
   }
   h1 {
     font-size: 120%;
@@ -192,12 +199,13 @@ footer p {
 }
 @media only screen and (max-width: 1050px) {
   header {
+    font-size: 80%;
     width: 45%;
     margin: 0 0 0 4.5%;
   }
   nav {
     width: 45%;
-    font-size: 80%;
+    font-size: 100%;
     margin: 0;
   }
   h1 {
@@ -249,8 +257,9 @@ footer p {
     padding: 1% 0;
   }
   nav p {
-    float: left;
-    margin: 0 0 0 18%;
+    float: right;
+    margin: 0 18% 0 0;
+    font-size: 90%;
     padding: 0;
   }
   h1 {
@@ -275,6 +284,7 @@ footer p {
   body {
     margin: 1% auto;
     padding: 0;
+    box-shadow: 5px 5px 5px;
   }
   nav {
     width: 100%;
@@ -305,7 +315,7 @@ footer p {
     margin: 0 0 5% 0;
     }
   article h3 {
-    margin: 5% 0 2% 12%;
+    margin: 5% 0 2% 5%;
   }
   article p {
     margin: 0 0 0 5%;

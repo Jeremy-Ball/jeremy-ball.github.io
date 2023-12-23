@@ -6,9 +6,9 @@ html {
 body {
   font-family: Garamond, serif;
   font-size: 100%;
-  width: 2500px;
+  width: 95%;
   margin: 1% auto;
-  padding: .5em 0;
+  padding: 0;
   background-color: whitesmoke;
   border-radius: 25px;
   box-shadow: 10px 10px 10px;
@@ -16,90 +16,94 @@ body {
 a:focus, a:hover {
   font-style: italic;
 }
-/* Styles for the header */
-header {
-  font-family: Comic Sans MS, Comic Sans, cursive;
-  float: left;
-  width: 700px;
-  margin: 0 0 0 20%;
-  padding: 8px 0 8px 0;
+.headernav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-header h2 {
-  float: left;
-  font-size: 220%;
-  color: darkslategray;
-  margin: 1% 0 0 30%;
+.headernav > div {
+  width: 50%;
+  height: 1.25em;
+  margin: 0;
   padding: 0;
 }
-/*styles for the navigation links*/
-nav {
-  float: left;
-  width: 700px;
-  margin: 0 15% 0 0;
-  padding: 23px 0 23px 0;
-  font-weight: bold;
-  color: darkslategray;
-  
+.main {
+  display: flex;
+  height: 100%;
+  background-color: whitesmoke;
 }
+.main > div {
+  display: flex;
+  background-color: whitesmoke;
+  height: 100%;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+/*styles for the header */
+h2 {
+  font-size: 200%;
+  text-align: left;
+  margin: 0 0 0 20%;
+  padding: 0;
+}
+/*styles for the nav */
 nav p {
   float: right;
+  width: 32%;
   text-align: center;
-  margin: 0 20% 0 0;
+  margin: 2% 0 0 0;
+  padding: 0;
 }
 h1 {
-  float: left;
   font-size: 130%;
+  text-align: center;
+  width: 100%;
   height: 100%;
-  width: 700px;
-  margin: 1% 0 0 48%;
+  margin: 10% 0 0 0;
+  padding: 0;
 }
-/* Styles for the picture */
+/*styles for the picture */
 picture {
-  clear: both;
-  float: left;
-  width: 700px;
-  margin: 0 0 2.5% 20%;
+  margin-left: auto;
 }
 picture img {
-  float: right;
-  margin: 0 3% 0 0;
+  max-width: 100%;
 }
-/* Styles for right article */
+/*styles for the article */
 article {
-  float: left;
-  height: 500px;
-  width: 700px;
-  margin: 0 15% 2.5% 0;
+  width: 95%;
+  margin: 0;
   padding: 0;
-  border: 1px solid black;
 }
 article h3 {
   text-align: left;
+  width: 50%;
   font-size: 150%;
-  margin: 10px 0;
-  color: black;
-  font-weight: bolder;
+  margin: 1% 0 0 2.5%;
 }
 article p {
-  font-size: 80%;
-  margin: 10px 200px 0 0;
-  position: relative;
-  z-index: 3;
-  color: darkslategrey;
-  font-weight: 200;
+  font-size: 100%;
+  width: 100%;
+  margin: 1% 0 0 2.5%;
 }
 article blockquote {
-  font-size: 120%;
-  margin: 0 200px 0 0;
-  padding: .25em 4em;
+  font-size: 100%;
+  width: 80%;
+  margin: 0;
+  padding: .25em 2em;
   color: green;
 }
 /* Styles for the footer */
 footer {
   clear: both;
-  width: 1400px;
+  width: 100%;
   height: 100%;
-  margin: 0 15% 0 20%;
+  margin: 3% 0 0 0;
 }
 footer p {
   font-size: 80%;
@@ -108,259 +112,20 @@ footer p {
   padding: 0;
 }
 @media only screen and (max-width: 2500px){
-  body {
-    width: 95%;
-  }
-  header {
-    font-size: 100%;
-    width: 40%;
-    margin: 0 0 0 9.5%;
-  }
-  header h2 {
-    float: right;
-    margin: 0 30% 0 0;
-    padding: 0;
-  }
-  nav {
-    width: 40%;
-    margin: 0 9.5% 0 0;
-  }
-  nav p{
-    float: left;
-    margin: 0 0 0 10%;
-    padding: 0;
-  }
-  h1 {
-    float: right;
-    font-size: 150%;
-    height: 100%;
-    width: 30%;
-    margin: 1% 21% 0 0;
-    padding: 0;
-  }
-  picture {
-    width: 40%;
-    margin: 1% 0 1% 9.5%;
-  }
-  article {
-    width: 30%;
-    margin: 5% 9.5% 1% 0;
-  }
-  article h2 {
-    margin: 5% 0 5% 0;
-  }
-  article h3 {
-    font-size: 120%
-  }
-  article p {
-    font-size: 90%;
-  }
-  article blockquote {
-    font-size: 90%;
-    padding: .5em 4em;
-  }
-  footer {
-    width: 80%;
-    margin: 0 9.5% 0 9.5%;
-  }
+
 }
 @media only screen and (max-width: 1750px) {
-  nav {
-    width: 40%;
-    margin: 0 9.5% 0 0;
-  }
-  nav p {
-    float: right;
-    margin: 0 10% 0 0;
-  }
-  h1 {
-    width: 40%;
-    margin: 1% 9.5% 0 0;
-    font-size: 120%;
-  }
-  picture {
-    margin: 1% 0% 3% 9.5%;
-  }
-  picture img {
-    max-width: 100%;
-  }
-  article {
-    font-size: 100%;
-    width: 40%;
-    margin: 1% 9.5% 1% 0;
-  }
-  article h2 {
-    margin: 1% 0 15% 0;
-  }
-  article h3 {
-    margin: 1%;
-}
-  article p {
-    margin: 1%;
-  }
-  article blockquote {
-    margin: 0;
-    padding: .5em 2em;
-  }
+
 }
 @media only screen and (max-width: 1050px) {
-  header {
-    font-size: 80%;
-    width: 45%;
-    margin: 0 0 0 4.5%;
-  }
-  nav {
-    width: 45%;
-    font-size: 100%;
-    margin: 0;
-  }
-  h1 {
-    font-size: 100%;
-    width: 45%;
-    height: 100%;
-    margin: 1% 4.5% 0 0;
-  }
-  picture {
-    width: 45%;
-    margin: 0 0 5% 4.5%;
-  }
-  picture img {
-    margin: 0 3% 0 0;
-  }
-  article {
-    height: 100%;
-    width: 45%;
-    margin: 0 4.5% 0 0;
-  }
-  article h2 {
-    font-size: 100%;
-    margin: 10% 0
-  }
-  footer {
-    width: 90%;
-    margin: 0 4.5%;
-  }
+
 }
 @media only screen and (max-width: 700px) {
-  header {
-    clear: both;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  header h2 {
-    float: none;
-    text-align: center;
-    font-size: 140%;
-    margin: 1% auto;
-    padding: 0;
-  }
-  nav {
-    float: left;
-    height: 20px;
-    width: 100%;
-    margin: 0;
-    padding: 1% 0;
-  }
-  nav p {
-    float: right;
-    margin: 0 18% 0 0;
-    font-size: 90%;
-    padding: 0;
-  }
-  h1 {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  picture {
-    width: 49%;
-    margin: 0 0 5% 0;
-  }
-  picture img {
-    max-width: 90%;
-  }
-  article {
-    margin: 0 0 0 0;
-  }
+
 }
 @media only screen and (max-width: 450px) {
-  body {
-    margin: 1% auto;
-    padding: 0;
-    box-shadow: 5px 5px 5px;
-  }
-  nav {
-    width: 100%;
-    margin: 1% 0 1% 0;
-    padding: 0;
-  }
-  nav p {
-    float: left;
-    width: 32%;
-    text-align: center;
-    font-size: 90%;
-    margin: 0;
-  }
-  picture {
-    float: left;
-    margin: 10% 0 0 0;
-    padding: 0;
-  }
-  picture img {
-    max-width: 100%;
-    float: left;
-    margin: 0 1%;
-    padding: 0;
-    border-radius: 1%;
-  }
-  article {
-    height: 100%;
-    margin: 0 0 5% 0;
-    }
-  article h3 {
-    margin: 5% 0 2% 5%;
-  }
-  article p {
-    margin: 0 0 0 5%;
-    font-size: 70%;
-  }
-  article blockquote {
-    font-size: 70%;
-    margin: 5%;
-    padding: 0;
-  }
-  footer {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  footer p {
-    font-size: 50%;
-    margin: 0;
-    padding: 0;
-  }
+ 
 }
 @media only screen and (max-width: 250px) {
-  header {
-    font-size: 80%;
-  }
-  nav {
-    font-size: 70%;
-  }
-  h1 {
-    font-size: 80%;
-  }
-  article h3 {
-    font-size: 80%;
-  }
-  article blockquote {
-    font-size: 60%;
-    margin: 0;
-    text-align: center;
-    padding: 5px;
-  }
+
 }

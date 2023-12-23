@@ -5,7 +5,8 @@ html {
 }
 body {
   font-family: Garamond, serif;
-  font-size: 16px;
+  font-size: 1em;
+  color: red;
   width: 2500px;
   margin: 1% auto;
   padding: .5em 0;

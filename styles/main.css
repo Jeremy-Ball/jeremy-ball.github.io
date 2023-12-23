@@ -69,7 +69,7 @@ article {
   float: left;
   height: 500px;
   width: 700px;
-  margin: 4% 15% 2.5% 0;
+  margin: 0 15% 2.5% 0;
   padding: 0;
   border: 1px solid black;
 }

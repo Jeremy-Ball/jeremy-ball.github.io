@@ -1,6 +1,6 @@
 /* Styles for the elements */
 html {
-  height: 150%;
+  height: 110%;
   background: linear-gradient(to top, seagreen 0%, slategray 50%, gray 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -163,8 +163,7 @@ footer p {
   }
   article blockquote {
     width: 90%;
-  }
-  
+  } 
 }
 @media only screen and (max-width: 800px) {
   html {
@@ -189,66 +188,51 @@ footer p {
     width: 95%;
     margin: 1% 2%;
   }
-
 }
 @media only screen and (max-width: 500px) {
   html {
     font-size: 60%;
   }
-  /*styles for the body */
   .body {
-    display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
   }
   /*styles for the header */
   .header {
     width: 90%;
-    margin: 0;
-  }
-  header h1 {
-    text-align: center;
-    margin: 1% 0 0 0;
   }
   /*styles for the nav */
   .nav {
     width: 90%;
-    margin: 1% 0 0 0;
-  }
-  nav p {
-    float: left;
-    width: 20%;
-    text-align: center;
-    margin: 1% 6%;
-    padding: 0;
-    font-size: 90%;
+    margin: 1% 0;
   }
   /*styles for the section */
-  .section {
-    width: 90%;
-    margin: 0;
-  }
   section h2 {
-    font-size: 120%;
     margin: 2% 0;
   }
   /*styles for the picture */
   .photo {
-    align-self: center;
-    width: 45%;
-    margin: 2% 0;
+    align-self: flex-start;
+    width: 90%;
+    margin: 2% auto;
     padding: 0;
+    background: linear-gradient(to right, black 0%, black 50%, gray 90%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
   }
   photo picture {
     float: none;
     margin: 0 2% 0 1%;
   }
   photo picture img {
-    max-width: 95%;
+    max-width: 50%;
+    border-radius: 10px;
   }
 /*styles for the article */
   .article {
     align-self: center;
-    width: 45%;
+    width: 95%;
     height: 30%;
     margin: 0;
     padding: 0;

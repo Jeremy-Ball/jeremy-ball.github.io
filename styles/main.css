@@ -75,7 +75,7 @@ nav ul ul li {
   text-align: left;
   margin: 0;
   width: 100%;
-  background-color: lightgray;
+  background: linear-gradient(to right, gray 0%, lightgray 30%, whitesmoke 100%);
 }
 nav ul li:hover > ul {
   display: block;
@@ -207,9 +207,12 @@ footer p {
   }
   /*styles for the nav */
   .nav {
-    font-size: 95%;
+    font-size: 90%;
     width: 90%;
     margin: 1% 0;
+  }
+  nav ul li {
+    padding: 1% 0;
   }
   /*styles for the section */
   section h2 {

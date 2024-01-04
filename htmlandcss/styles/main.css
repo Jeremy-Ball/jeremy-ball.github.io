@@ -5,7 +5,7 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-a:focus, a:hover {
+a:focus, a:hover a:visited {
   color: black;
 }
 /*styles for the body */
@@ -125,7 +125,7 @@ article {
   align-items: center;
   width: 30%;
   height: 300px;
-  margin: 1% auto;
+  margin: 1% auto 10%;
   padding: 0;
   background: rgba(115, 145, 128, .3);
   border-radius: 50px;

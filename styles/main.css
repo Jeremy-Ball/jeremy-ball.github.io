@@ -68,6 +68,7 @@ nav ul ul {
   margin: 0;
   position: absolute;
   top: 100%;
+  box-shadow: 10px 10px 10px;
 }
 nav ul ul li {
   float: none;
@@ -193,7 +194,7 @@ footer p {
 }
 @media only screen and (max-width: 500px) {
   html {
-    font-size: 60%;
+    font-size: 80%;
   }
   .body {
     flex-flow: column wrap;
@@ -206,6 +207,7 @@ footer p {
   }
   /*styles for the nav */
   .nav {
+    font-size: 95%;
     width: 90%;
     margin: 1% 0;
   }

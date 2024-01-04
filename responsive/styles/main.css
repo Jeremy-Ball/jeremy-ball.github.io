@@ -67,13 +67,14 @@ nav ul ul {
   margin: 0;
   position: absolute;
   top: 100%;
+  box-shadow: 10px 10px 10px;
 }
 nav ul ul li {
   float: none;
   text-align: left;
   margin: 0;
   width: 100%;
-  background-color: lightgray;
+  background: linear-gradient(to right, gray 0%, lightgray 30%, whitesmoke 100%);
 }
 nav ul li:hover > ul {
   display: block;
@@ -240,16 +241,12 @@ footer p {
   }
   /*styles for the nav */
   .nav {
+    font-size: 85%;
     width: 90%;
     margin: 1% auto;
   }
-  nav p {
-    float: left;
-    width: 20%;
-    text-align: center;
-    margin: 1% 6%;
-    padding: 0;
-    font-size: 90%;
+  nav ul li {
+    padding: 4% 0;
   }
   /*styles for the section */
   .section {
@@ -265,7 +262,7 @@ footer p {
     align-items: flex-start;
     width: 95%;
     height: auto;
-    margin: 5% auto;
+    margin: 2% auto;
   }
   picture img {
     max-width: 100%;
@@ -273,5 +270,6 @@ footer p {
   }
   article {
     width: 95%;
+    margin: 2% auto 20%;
   }
 }

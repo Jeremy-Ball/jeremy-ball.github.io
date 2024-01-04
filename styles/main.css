@@ -217,7 +217,7 @@ footer p {
     padding: 3% 0;
   }
   nav ul ul {
-    width: 100%;
+    width: auto;
   }
   /*styles for the section */
   section h2 {

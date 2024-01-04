@@ -66,13 +66,14 @@ nav ul ul {
   margin: 0;
   position: absolute;
   top: 100%;
+  box-shadow: 10px 10px 10px;
 }
 nav ul ul li {
   float: none;
   text-align: left;
   margin: 0;
   width: 100%;
-  background-color: lightgray;
+  background: linear-gradient(to right, gray 0%, lightgray 30%, whitesmoke 100%);
 }
 nav ul li:hover > ul {
   display: block;
@@ -258,13 +259,8 @@ footer p {
     width: 90%;
     margin: 1% auto;
   }
-  nav p {
-    float: left;
-    width: 20%;
-    text-align: center;
-    margin: 1% 6%;
-    padding: 0;
-    font-size: 90%;
+  nav ul li {
+    padding: 2% 0;
   }
   /*styles for the section */
   .section {
@@ -281,7 +277,7 @@ footer p {
     border: .25px solid black;
     width: 95%;
     height: auto;
-    margin: 5% auto;
+    margin: 10% auto;
   }
   picture img {
     max-width: 100%;

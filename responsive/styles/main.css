@@ -1,21 +1,22 @@
 /* Styles for the elements */
 html {
   height: 100%;
-  background: linear-gradient(to top, seagreen 0%, slategray 50%, gray 100%);
+  background: linear-gradient(to top, seagreen 0%,
+                slategray 50%, gray 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-a:focus a:hover {
+a:focus a:hover a:visited {
   color: black;
 }
 /*styles for the body */
 .body {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
   font-family: Garamond, serif;
   font-size: 100%;
+  justify-content: space-around;
+  align-items: center;
   width: 2000px;
   margin: 1% auto;
   padding: 0;
@@ -98,13 +99,24 @@ section h2 {
   padding: 0;
 }
 picture {
-  display: flex;
   height: 100%;
-  width: 49%;
-  margin: 5% 0 0 0;
+  width: 65%;
+  margin: 0;
   padding: 0;
 }
 picture img {
+  max-width: 100%;
+  margin: 1% auto;
+  box-shadow: 10px 10px 10px;
+  border: 1px solid black;
+}
+.css {
+  height: 100%;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+.css img {
   max-width: 100%;
   margin: 1% auto;
   box-shadow: 10px 10px 10px;
@@ -241,12 +253,11 @@ footer p {
   }
   /*styles for the nav */
   .nav {
-    font-size: 85%;
     width: 90%;
     margin: 1% auto;
   }
   nav ul li {
-    padding: 4% 0;
+    padding: 2% 0;
   }
   /*styles for the section */
   .section {
@@ -258,18 +269,27 @@ footer p {
     font-size: 120%;
   }
   picture {
-    justify-content: flex-start;
-    align-items: flex-start;
     width: 95%;
-    height: auto;
     margin: 2% auto;
   }
   picture img {
     max-width: 100%;
     box-shadow: 5px 5px 10px;
   }
+  .css {
+    height: 100%;
+    width: 90%;
+    margin: 2% auto;
+    padding: 0;
+  }
+  .css img {
+    max-width: 100%;
+    margin: 0;
+    box-shadow: 10px 10px 10px;
+    border: 1px solid black;
+  }
   article {
     width: 95%;
-    margin: 2% auto 20%;
+    margin: 2% auto 30%;
   }
 }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeremy Ball</title>
+    <link rel="shortcut icon" href="images/faviconliz.png">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+
+  <div class="body">
+
+    <header class="header">
+      <h1>Jeremy Ball</h1>
+    </header>
+    <nav class="nav">
+      <ul>
+        <li><a href="https://jeremy-ball.github.io">Home</a></li>
+        <li><a>HTML and CSS</a>
+          <ul>
+            <li><a href="https://jeremy-ball.github.io/htmlandcss/index.html">Building a Website</a></li>
+            <li><a href="https://jeremy-ball.github.io/responsive/index.html">Responsive Web Design</a></li>
+          </ul>
+        </li>
+        <li><a>Python</a></li>
+      </ul>
+    </nav>
+    <section class="section">
+      <h2>Writing in Python</h2>
+    </section>
+    
+    <main class="main">
+      <h2 class="conth2">Writing "while" loops</h2>      
+      <picture class="main">
+        <img src="images\whileloop.jpg">   
+      </picture>
+            
+      <article class="main">
+        <h3>Simple While Loop</h3>
+         <p>
+           This is an example of how I write my while loops. I start by setting a variable (stayInLoop = True) then nest further instructions within. This loop will only exit after returning a value. In this case the value being returned is (dayInput).
+         </p>
+      </article>
+
+      <picture class="main">
+        <img src="images\nestedwhile.jpg">
+      </picture>
+
+      <article class="main">
+        <h3>Nested While Loop</h3>
+        <p>
+          Here I have a while loop (stayInLoop2) inside another while loop. The first while loop appends items to a list (itemList) then the second while loop prompts the user to enter new data. The second while loop will only exit when the user enters 1 or 3.  
+        </p>
+      </article>
+    <main class="main">
+      <h2 class="conth2">Writing "for" loops</h2>      
+      <picture class="main">
+        <img src="images\forloop.jpg">   
+      </picture>
+            
+      <article class="main">
+        <h3>Simple For Loop</h3>
+         <p>
+           For loops in my program are used to iterate through lists and files. This particular for loop pulls each items from a list of directories (monthFiles), capitalizes the first letter (.title()), then removes the .csv from the file name (.replace()) and appends it to a dictionary (monthDict). The dictionary will be used later to pull the value of the month using  an integer set by x (monthDict[x+1] = month).
+         </p>
+      </article>
+         
+      <picture class="main">
+        <img src="images\nestvariables.jpg">
+        <img src="images\nestedfor.jpg">
+      </picture>
+
+      <article class="main">
+        <h3>Nesting in for loop</h3>
+        <p>
+          I used a nested if statement in this for loop to compare a dictionary of months in order (monthOrder) then write the month to a new dictionary (monthKey) if it is a valid month. I added an else statememt at the end to continue iterating through the months if something in the list of directories was not valid. This will allow other directories to be added to "/months" without messing up the intended value-key pairs.
+        </p>
+      </article>
+      
+      <h2 class="conth2"> Writing "if" statements
+      </h2>
+      
+      <picture class="main">
+        <img src="images\ifstate.jpg">
+      </picture>
+      
+      <article class="main">
+        <h3>Simple if statement</h2>
+        <p>
+          This if statement checks if a users input is in the key-value pair of a dictionary (monthKey). If it is, then the program will return the value associated with that key and use it in another method. If it is not, the program will prompt the user with "Invalid input". For data validation I use try-excpept to check if the input is not an integer. No values besides 2 digit numbers between 1 and 31 can be entered using this if statement.
+        </p>
+      </article>
+        
+      <picture class="main">
+        <img src="images\nestifstate.jpg">
+      </picture>
+      
+      <article class="main">
+        <h3>
+          Nesting if statements
+        </h3>
+        <p>
+          This method is used to validate that an input was good for entering the day of the month. First it checks if the users input is not 0 (dayInput != 0), then if it is numeric (dayInput.isnumeric() == True), then if it is 2 digits (len(dayInput) == 2), and finally if the users input is betweeen 1 and 31 (dayInput <= 31). If and elif statements can continue to be nested for further validation.
+        </p>
+      </article>  
+    </main>
+    <footer class="footer">
+      <p>&copy; 2023 Jeremy Ball</p>
+    </footer>
+  </div>
+</html>

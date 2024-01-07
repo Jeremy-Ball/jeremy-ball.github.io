@@ -1,0 +1,166 @@
+/* Styles for the elements */
+html {
+  height: 110%;
+  font-size: 80%;
+  background: linear-gradient(to top, seagreen 0%, slategray 50%, gray 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+a:hover a:focus a:visited {
+  color: black;
+}
+/*styles for the body */
+.body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-family: Garamond, serif;
+  font-size: 100%;
+  width: 95%;
+  margin: 1% auto;
+  padding: 0;
+  background-color: whitesmoke;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px;
+}
+/*styles for the header */
+.header {
+  width: 90%;
+  margin: 1% auto;
+  padding: 0;
+}
+header h1 {
+  text-align: center;
+  width: 90%;
+  margin: 1% auto;
+  padding: 0;
+}
+/*styles for the nav */
+.nav {
+  font-size: 85%;
+  width: 90%;
+  margin: 1% auto;
+  padding: 0;
+}
+nav ul {
+  list-style-type: none;
+  margin: 2% 0;
+  padding: 0;
+  position: relative;
+}
+nav ul li {
+  text-align: center;
+  float: right;
+  width: 33%;
+  padding: 2% 0;
+}
+nav ul li a {
+  font-size: 120%;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-weight: bold;
+}
+a.current {
+  color: white;
+}
+nav ul ul {
+  display: none;
+  width: 55%;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  box-shadow: 10px 10px 10px;
+}
+nav ul ul li {
+  float: none;
+  text-align: left;
+  margin: 0;
+  width: 100%;
+  background: linear-gradient(to right, gray 0%, lightgray 30%, whitesmoke 100%);
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/*styles for the section */
+.section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+section h2 {
+  font-size: 120%;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  width: 95%;
+  margin: 10% auto 0;
+  padding: 0;
+}
+.conth2 {
+  width: 90%;
+  margin: 15% auto 0;
+  padding: 3% 0 0;
+  text-align: center;
+  border-top: 1px solid black;
+}
+.main picture {
+  width: 90%;
+  margin: 10% auto 3%;
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px;
+}
+.main img {
+  max-width: 100%;
+  border-radius: 10px;
+  background: black;
+}
+.main article {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 1% auto;
+  padding: 0;
+  background: rgba(115, 145, 128, .3);
+  border-radius: 50px;
+}
+h3 {
+  font-size: 140%;
+  text-align: center;
+  width: 80%;
+  margin: 2%;
+  padding: 0;
+}
+article p {
+  font-size: 100%;
+  width: 80%;
+  margin: 3%;
+  padding: 0;
+}
+/* Styles for the footer */
+.footer {
+  width: 100%;
+  margin: 5% 0 .25%;
+  padding: 0;
+}
+footer p {
+  font-size: 70%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}

@@ -1,1 +1,84 @@
-h
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeremy Ball</title>
+    <link rel="shortcut icon" href="images/faviconliz.png">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  
+  <div class="body">
+
+    <header class="header">
+      <h1>Jeremy Ball</h1>
+    </header>
+    <nav class="nav">
+      <ul>
+        <li><a href="https://jeremy-ball.github.io">Home</a></li>
+        <li><a>HTML and CSS</a>
+          <ul>
+            <li><a href="https://jeremy-ball.github.io/htmlandcss/index.html">Building a Website</a></li>
+            <li><a href="https://jeremy-ball.github.io/responsive/index.html">Responsive Web Design</a></li>
+          </ul>
+        </li>
+        <li><a>Python</a>
+          <ul>
+            <li><a href="../index.html">Loops and Statements</a></li>
+            <li><a href="../filework/index.html">Working With Files</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <section class="section">
+      <h2>Working With Files</h2>
+    </section>
+    
+    <main class="main">
+      <h2 class="conth2">Creating Directories
+      </h2>
+      <picture class="main">
+        <img src="images\filescreen1.jpg">
+      </picture>
+      <picture class="main">
+        <img src="images\filescreen1_1.jpg">
+      </picture>
+      <article class="main">
+        <h3>Initial File Setup</h3>
+        <p>The method starts by checking if the "months" directory was made. If it was not then it will create the directory. Afterwards, the method checks if the file "mod.csv" was created. The file "mod" stands for "modified". This file will be used to assist in the deletion and modification of entries. If it was created then the method prints an empty string and if not then the method creates the file for future use.
+        </p>
+      </article>
+      <h2 class="conth2">
+        Creating Files
+      </h2>
+      <picture class="main">
+        <img src="images\filescreen2.jpg">
+      </picture>
+      <picture class="main">
+        <img src="images\filescreen2_2.jpg">
+      </picture>
+      <article>
+        <h3>
+          Creating Month Files
+        </h3>
+        <p>Only months that are entered by the user will have a file associated with them. This method pulls the user entry and checks if a month was created. If it was not then the method creates the month file. Otherwise, it prints an empty string.
+        </p>
+       </article>
+       <picture class="main">
+         <img src="images\filescreen3.jpg">
+       </picture>
+       <picture class="main">
+         <img src="images\filescreen3_3.jpg">
+       </picture>
+       <article class="main">
+         <h3>Listing Files</h2>
+         <p>This method uses a built-in python library called OS that has a function that creates a list of directories in a file (listdir). By calling listdir(path), you can create a list of the file names and then iterate through them as menu items. In this case, the only month files that were created by user entry was January, February, and March.
+         </p>
+       </article>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2023 Jeremy Ball</p>
+    </footer>
+  </div>
+</html>
+      

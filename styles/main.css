@@ -51,7 +51,7 @@ nav {
 	height: 120px;
 }
 #article-body{
-	margin: 0;
+	margin: 5% 0 0 0;
 	padding: 0;
 	height: 120px;
 }
@@ -70,6 +70,7 @@ nav {
 }
 footer {
 	display: flex;
+	flex-flow: column;
 	height: 100px;
 	width: 95%;
 	margin: 10% 0 0 0;
@@ -95,6 +96,9 @@ footer p {
 	#main-image {
 		margin: 5% 0;
 		height: 70%;
+	}
+	footer {
+		flex-flow: row;
 	}
 }
 /* Large devices (laptops/desktops, 1200px and up) */

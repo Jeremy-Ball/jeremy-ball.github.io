@@ -3,7 +3,6 @@ html {
 	background-color: black;
 	color: darkgrey;
 	font-family: Arial, sans-serif;
-	width: 100%;
 }
 a {
 	text-decoration: none;
@@ -16,8 +15,6 @@ body {
 	display: flex;
 	flex-flow: row-reverse wrap;
 	justify-content: center;
-	height: 800px;
-	width: 98%;
 }
 nav {
 	color: lightgrey;

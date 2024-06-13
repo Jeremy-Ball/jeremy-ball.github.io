@@ -3,7 +3,6 @@ html {
 	background-color: black;
 	color: lightgrey;
 	font-family: Arial, sans-serif;
-	width: 100%;
 }
 a {
 	text-decoration: none;
@@ -16,8 +15,6 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	height: 800px;
-	width: 98%;
 }
 nav {
 	display: flex;
@@ -64,8 +61,7 @@ nav {
 	margin: 0 10% 0 0;
 }
 #main-image {
-	height: 60%;
-	width: 98%;
+	height: 400px;
 	margin: 10% 0;
 }
 footer {
@@ -95,7 +91,7 @@ footer p {
 	}
 	#main-image {
 		margin: 5% 0;
-		height: 70%;
+		height: 600px;
 	}
 	footer {
 		flex-flow: row;

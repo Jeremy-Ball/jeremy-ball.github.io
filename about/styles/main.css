@@ -74,7 +74,7 @@ h1 {
 	color: lightgrey;
 }
 .about-me h1 {
-	margin: 1% 1% 5% 1%;
+	margin: 7% 1% 5% 1%;
 
 }
 .about-me p {
@@ -97,7 +97,7 @@ footer {
 	flex-flow: column;
 	height: 100px;
 	width: 95%;
-	margin: 15% 0 0 0;
+	margin: 30% 0 0 0;
 	border-top: 1px solid #2B2E3A;
 	font-size: .8em;
 }
@@ -159,6 +159,7 @@ footer p {
 		padding: 0;
 	}
 	footer {
+		margin: 15% 0 0 0;
 		width: 85%;
 	}
 }

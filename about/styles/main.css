@@ -1,12 +1,12 @@
 /* Extra small devices (phones, 560px and down) */
 html {
 	background-color: black;
-	color: darkgrey;
+	color: white;
 	font-family: Arial, sans-serif;
 }
 a {
 	text-decoration: none;
-	color: lightgrey;
+	color: white;
 }
 a:hover {
 	color: #6f64b4;
@@ -17,7 +17,6 @@ body {
 	justify-content: center;
 }
 nav {
-	color: lightgrey;
 	display: flex;
 	flex-flow: row;
 	justify-content: space-between;
@@ -68,14 +67,14 @@ img {
 	line-height: 1.5;
 }
 h1 {
-	color: lightgrey;
+	color: white;
 }
 .about-me h1 {
 	margin: 7% 1% 5% 1%;
-
 }
 .about-me p {
 	margin: 5% 1%;
+	color: darkgray;
 }
 .skills {
 	width: 98%;
@@ -100,6 +99,7 @@ footer {
 }
 footer p {
 	margin: auto;
+	color: darkgray;
 }
 /* Medium devices (landscape tablets, 560px and up) */
 @media only screen and (min-width: 560px) {

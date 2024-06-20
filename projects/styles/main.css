@@ -121,6 +121,9 @@ footer p {
 	.project-links {
 		margin: 5% 0 0 0;
 	}
+	.project-links a {
+		max-width: 520px;
+	}
 	.project-box {
 		height: 75px;
 	}

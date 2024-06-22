@@ -1,4 +1,4 @@
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 300px and up) */
 html {
 	background-color: black;
 	color: white;
@@ -163,11 +163,12 @@ nav {
 	padding: 5px;
 }
 .project-desc h3 {
+ max-width: 190px;
 	margin: 0 0 1% 0;
 	padding: 0;
 }
 .project-desc p {
-	max-width: 280px;
+	max-width: 190px;
 	margin: 0;
 	padding: 0;
 	color: darkgray;
@@ -184,6 +185,24 @@ footer {
 footer p {
 	margin: auto;
 	color: darkgray;
+}
+/* Larger phones (400px and up) */
+@media only screen and (min-width: 400px) {
+        .project-desc p {
+            max-width: 280px;
+            margin: 0;
+            padding: 0;
+            color: darkgray;
+        }
+        .project-img {
+            max-width: 100%;
+            padding: 1px;
+            margin: 0 5px 0 0;
+            border-radius: 5px;
+        }
+        .project-desc h3 {
+            max-width: 280px;
+        }
 }
 /* Medium devices (landscape tablets, 560px and up) */
 @media only screen and (min-width: 560px) {

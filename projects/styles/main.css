@@ -110,7 +110,7 @@ footer p {
 /*Larger phones (400px and up)*/
 @media only screen and (min-width: 400px) {
   .project-desc p {      
-   max-width: 300px;
+   max-width: 290px;
    margin: 0 5px 0 0;
   }
 }

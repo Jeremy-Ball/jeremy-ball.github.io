@@ -1,4 +1,4 @@
-/* Extra small devices (phones, 560px and down) */
+/* Extra small devices (phones, 310px and up) */
 html {
 	background-color: black;
 	color: white;
@@ -45,18 +45,21 @@ nav {
 #article-title {
 	margin: 0;
 	padding: 0;
-	height: 120px;
+	height: 150px;
 }
 #article-body{
-	margin: 5% 0 0 0;
+	line-height: 1.5;
+	margin: 5% 0;
 	padding: 0;
-	height: 120px;
+	height: 180px;
 	color: darkgray;
 }
 .social-links {
 	float: left;
-	margin: 0 10% 0 0;
+	margin: 0 1% 0 0;
 	padding: 0;
+	width: 30%;
+	height: 40px;
 }
 #social-links h3 {
 	margin: 0 10% 0 0;
@@ -89,7 +92,11 @@ footer p {
 	.article {
 		width: 560px;
 		padding: 2%;
-		margin: 5% 0 0 0;
+		margin: 5% 0;
+	}
+	#article-body {
+		margin: 0;
+		height: 120px;
 	}
 	#main-image {
 		margin: 5% 0;

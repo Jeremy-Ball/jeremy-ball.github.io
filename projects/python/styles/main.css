@@ -259,8 +259,9 @@ footer p {
 	.project-links {
 		flex-flow: row wrap;
 		align-items: center;
+		justify-content: center;
 		width: 90%;
-		margin: 0;
+		margin: 3% 0;
 	}
 	.project-links a {
 		margin: 0 2% 2% 0;

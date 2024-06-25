@@ -85,6 +85,7 @@ nav {
 	padding: 5px;
 }
 .project-desc h3 {
+	max-width: 190px;
 	margin: 0 0 1% 0;
 	padding: 0;
 }

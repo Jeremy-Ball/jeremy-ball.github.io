@@ -1,4 +1,4 @@
-/* Extra small devices (phones, 310px and up) */
+/* Extra small devices (phones, 300px and up) */
 html {
 	background-color: black;
 	color: white;
@@ -45,24 +45,20 @@ nav {
 #article-title {
 	margin: 0;
 	padding: 0;
-	height: 150px;
 }
 #article-body{
 	line-height: 1.5;
-	margin: 5% 0;
+	margin: 10% 0;
 	padding: 0;
-	height: 180px;
 	color: darkgray;
 }
-.social-links {
-	float: left;
-	margin: 0 1% 0 0;
+.article h3 {
 	padding: 0;
-	width: 30%;
-	height: 40px;
+	margin: 0;
 }
-#social-links h3 {
-	margin: 0 10% 0 0;
+.article a {
+	float: left;
+	margin: 0 5% 0 0;
 }
 #main-image {
 	height: 400px;
@@ -73,7 +69,7 @@ footer {
 	flex-flow: column;
 	height: 100px;
 	width: 95%;
-	margin: 10% 0 0 0;
+	margin: 15% 0 0 0;
 	border-top: 1px solid #2B2E3A;
 	font-size: .8em;
 }
@@ -86,30 +82,36 @@ footer p {
 	#home {
 		margin: 0 0 0 5%;
 	}
-	body {
-		justify-content: left;
-	}
 	.article {
-		width: 560px;
-		padding: 2%;
-		margin: 5% 0;
+		margin: 10% 0 0 0;
+		padding: 0 0 0 5%;
+		max-width: 700px;
+	}
+	#article-title {
+		max-width: 80%;
+		
 	}
 	#article-body {
-		margin: 0;
-		height: 120px;
+		max-width: 80%;
+ 		
+	}
+	.article a {
+		margin: 0 15% 0 0;
+		
 	}
 	#main-image {
-		margin: 5% 0;
 		height: 600px;
+		margin: 5% 0;
 	}
 	footer {
 		flex-flow: row;
 	}
 }
-/* Large devices (laptops/desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Large devices (laptops/desktops, 1000px and up) */
+@media only screen and (min-width: 1000px) {
 	body {
 		padding: 0;
+		margin: 0 auto;
 		justify-content: center;
 		max-width: 2000px;
 	}
@@ -119,8 +121,29 @@ footer p {
 	.nav-links {
 		margin: 0 5% 0 0;
 	}
+	.article {
+		padding: 0;
+		max-width: 47%;
+		margin: 5% 0;
+	}
+	#article-title {
+		margin: 0 0 0 15%;
+		max-width: 80%;
+
+	}
+	#article-body {
+		margin: 10% 0 10% 15%;
+		max-width: 80%;
+
+	}
+	.article a {
+		margin: 0 0 0 15%;
+
+	}
 	#main-image {
-		width: 45%;
+		width: 47%;
+		padding: 0;
+		margin: 5% 0;
 	}
 	footer {
 		width: 85%;

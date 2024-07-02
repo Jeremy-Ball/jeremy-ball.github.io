@@ -15,7 +15,9 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-
+	max-width: 2000px;
+	margin: 0 auto;
+	padding: 2%;
 }
 nav {
 	display: flex;
@@ -26,9 +28,6 @@ nav {
 	width: 95%;
 	border-bottom: 1px solid #2B2E3A;
 }
-#home {
-	margin: 0;
-}
 .nav-links {
 	width: 300px;
 }
@@ -37,24 +36,22 @@ nav {
 	margin: 0 8%;
 	font-weight: bold;
 }
-
-/* SLIDE SHOW */
-
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
 	max-width: 600px;
+	max-height: 900px;
 	position: relative;
-	margin: 15% auto 0  auto;
+	margin: 15% 0 0 0;
 }
 /* Slideshow container */
 .slideshow-container1 {
 	max-width: 600px;
 	height: 30%;
 	position: relative;
-	margin: 5%  auto;
-	padding: 1%;
+	margin: 8% auto 0 auto;
+	padding: 2%;
 }
 /* Hide the images by default */
 .mySlides {
@@ -69,23 +66,19 @@ nav {
 	max-width: 100%;
 	margin: auto;
 }
-.mySlides1 img {
-	max-width: 100%;
-	margin: auto;
-	max-height: 500px;
-}
 .numberText {
-	color: white;
+	color: #6f64b4;
+	font-size: .75em;
 	text-align: center;
 }
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 98%;
+  top: 105%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
+  padding: 6px;
   color: #6f64b4;
   font-weight: bold;
   font-size: 18px;
@@ -93,41 +86,46 @@ nav {
   user-select: none;
 }
 /* Position the "next button" to the right */
-.prev {
-	left: 0px;
-}
 .next {
 	right: 0px;
 }
-
 /* Caption text */
 .text {
- 	color: darkgray;
- 	font-size: 15px;
+ 	color: #6f64b4;
+ 	font-size: .75em;
  	width: 100%;
  	text-align: center;
 }
-
 /* Fading animation */
 .fade {
   	animation-name: fade;
   	animation-duration: 1.5s;
 }
-
 @keyframes fade {
   	from {opacity: .4}
   	to {opacity: 1}
 }
 /* END SLIDE SHOW */
 .article {
-		margin: 5% 0;
-	}
-.article h1 {
-	}
+	margin: 5% 0;
+}
 .article p {
-		line-height: 1.2;
-		color: darkgray;
-	}
+	line-height: 1.2;
+	color: darkgray;
+}
+.arrows {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	font-size: 1em;
+	width: 90%;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0;
+}
+.arrows a {
+	color: #6f64b4;
+}
 footer {
 	display: flex;
 	flex-flow: column;
@@ -150,8 +148,7 @@ footer p {
 		margin: 10% auto 0 auto;
 	}
 	.slideshow-container1 {
-		margin: 0 auto;
-		
+		margin: 5% auto 0 auto;
 	}
 	footer {
 		flex-flow: row;
@@ -171,17 +168,17 @@ footer p {
 	}
 	.slideshow-container {
 		margin: 5% 0 0 5%;
-		width: 50%;
-		height: 500px;
+		width: 60%;
+		max-height: 900px;
 	}
 	/* Slideshow container */
 	.slideshow-container1 {
-		max-width: 40%;
-		height: 350px;
+		width: 35%;
+		height: 30%;
 		position: relative;
-		margin: 5% 0 0 5%;
+		margin: 5% 0 0 0;
 	}
-	/* Position the "next button" to the right */
+	/* Position the "next and prev" buttons */
 	.prev {
 		top: 50%;
 		left: -35px;
@@ -192,6 +189,10 @@ footer p {
 	}
 	.article {
 		line-height: 1.5;
+	}
+	.arrows {
+		margin: 5% auto;
+		max-width: 70%;
 	}
 	footer {
 		width: 85%;

@@ -1,4 +1,4 @@
-/* Extra small devices (phones, 300px and up) */
+/* Extra small devices (phones, 310px and up) */
 html {
 	background-color: black;
 	color: white;
@@ -15,6 +15,9 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	max-width: 2000px;
+	margin: 0 auto;
+	padding: 2%;
 }
 nav {
 	display: flex;
@@ -36,9 +39,6 @@ nav {
 	margin: 0 8%;
 	font-weight: bold;
 }
-
-/* SLIDE SHOW */
-
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -59,17 +59,18 @@ nav {
 	max-height: 500px;
 }
 .numberText {
-	color: white;
+	font-size: .75em;
+	color: #6f64b4;
 	text-align: center;
 }
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 98%;
+  top: 105%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
+  padding: 6px;
   color: #6f64b4;
   font-weight: bold;
   font-size: 18px;
@@ -77,13 +78,9 @@ nav {
   user-select: none;
 }
 /* Position the "next button" to the right */
-.prev {
-	left: 0px;
-}
 .next {
 	right: 0px;
 }
-
 /* Caption text */
 .text {
  	color: darkgray;
@@ -91,86 +88,51 @@ nav {
  	width: 100%;
  	text-align: center;
 }
-/* The dots/bullets/indicators NOT IN USE
-.dot {
-  	cursor: pointer;
-  	height: 15px;
-  	width: 15px;
-  	margin: 0 2px;
-  	background-color: #bbb;
-  	border-radius: 50%;
-  	display: inline-block;
-  	transition: background-color 0.6s ease;
-}*/
-.active, .dot:hover {
-  	background-color: #717171;
-}
-
 /* Fading animation */
 .fade {
   	animation-name: fade;
   	animation-duration: 1.5s;
 }
-
 @keyframes fade {
-  	from {opacity: .4}
-  	to {opacity: 1}
+  	from {opacity: .4;}
+  	to {opacity: 1;}
 }
-/* END SLIDE SHOW */
-
 .article {
-	margin: 0 3%;
-}
-.article h1 {
-
+	margin: 5% 3%;
 }
 .article p {
 	line-height: 1.5;
 	color: darkgray;
-}
-.foodprep-link {
-	color: darkgray;
-	width: 100%;
-	margin: 0 3%;
 }
 .project-links {
 	display: flex;
 	flex-flow: column;
 	width: 100%;
 	margin: 3% 0 0 0;
-	padding: 2%;
 }
-.project-box {
+.project-box a {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row;
 	align-items: center;
-	justify-content: left;
-	max-width: 500px;
-	max-height: 100%;
+	max-width: 400px;
 	margin: 2% 0;
-	padding: 10px;
+	padding: 1%;
 	background-image: linear-gradient( to bottom right, #16171d, #2B2E3A );
 	border-radius: 5px;
 }
 .project-img {
-	max-width: 100%;
-	padding: 1px;
-	margin: 0;
-	border-radius: 5px;
+	min-width: 50px;
 }
 .project-desc {
 	font-size: .75em;
-	padding: 5px;
 }
 .project-desc h3 {
- max-width: 190px;
-	margin: 0 0 1% 0;
 	padding: 0;
+	margin: 0;
 }
 .project-desc p {
-	max-width: 190px;
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	color: darkgray;
 }
 footer {
@@ -185,24 +147,6 @@ footer {
 footer p {
 	margin: auto;
 	color: darkgray;
-}
-/* Larger phones (400px and up) */
-@media only screen and (min-width: 400px) {
-        .project-desc p {
-            max-width: 280px;
-            margin: 0;
-            padding: 0;
-            color: darkgray;
-        }
-        .project-img {
-            max-width: 100%;
-            padding: 1px;
-            margin: 0 5px 0 0;
-            border-radius: 5px;
-        }
-        .project-desc h3 {
-            max-width: 280px;
-        }
 }
 /* Medium devices (landscape tablets, 560px and up) */
 @media only screen and (min-width: 560px) {
@@ -244,42 +188,23 @@ footer p {
 	}
 	.article {
 		width: 35%;
-		margin: 5% 0;
+	}
+	.article h1 {
+
 	}
 	.article p {
 		line-height: 1.5;
 		color: darkgray;
 	}
-	.foodprep-link {
-		color: darkgray;
-		height: 50px;
-		margin: 0 3%;
-		width: 90%;
-	}
 	.project-links {
 		flex-flow: row wrap;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-around;
 		width: 90%;
 		margin: 3% 0;
 	}
 	.project-links a {
-		margin: 0 2% 2% 0;
-	}
-	.project-box {
-		margin: 0;
-		width: 100%;
-	}
-	.project-desc h3 {
-		max-width: 300px;
-		margin: 0 0 1% 0;
-		padding: 0;
-	}
-	.project-desc p {
-		max-width: 300px;
-		margin: 0;
-		padding: 0;
-		color: darkgray;
+		width: 500px;
 	}
 	footer {
 		width: 85%;

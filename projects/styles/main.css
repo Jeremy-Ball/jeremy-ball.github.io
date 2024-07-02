@@ -1,12 +1,12 @@
-/* Extra small devices (phones, 300px and up) */
+/* Extra small devices (phones, 600px and down) */
 html {
 	background-color: black;
-	color: lightgrey;
+	color: white;
 	font-family: Arial, sans-serif;
 }
 a {
 	text-decoration: none;
-	color: lightgrey;
+	color: white;
 }
 a:hover {
 	color: #6f64b4;
@@ -15,6 +15,9 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	max-width: 2000px;
+	margin: 0 auto;
+	padding: 2%;
 }
 nav {
 	display: flex;
@@ -59,40 +62,32 @@ nav {
 	display: flex;
 	flex-flow: column;
 	width: 100%;
-	margin: 10% 0 0 0;
+	margin: 3% 0 0 0;
 	padding: 2%;
 }
-.project-box {
+.project-box a {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row;
 	align-items: center;
-	justify-content: left;
 	max-width: 500px;
-	max-height: 100%;
 	margin: 2% 0;
-	padding: 10px;
+	padding: 1%;
 	background-image: linear-gradient( to bottom right, #16171d, #2B2E3A );
 	border-radius: 5px;
 }
 .project-img {
-	max-width: 100%;
-	padding: 1px;
-	margin: 0;
-	border-radius: 5px;
+	min-width: 50px;
 }
 .project-desc {
 	font-size: .75em;
-	padding: 5px;
 }
 .project-desc h3 {
-	max-width: 190px;
-	margin: 0 0 1% 0;
 	padding: 0;
+	margin: 0;
 }
 .project-desc p {
-	max-width: 195px;
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	color: darkgray;
 }
 footer {
@@ -108,13 +103,6 @@ footer p {
 	margin: auto;
 	color: darkgray;
 }
-/*Larger phones (400px and up)*/
-@media only screen and (min-width: 400px) {
-  .project-desc p {      
-   max-width: 290px;
-   margin: 0 5px 0 0;
-  }
-}
 /* Medium devices (landscape tablets, 560px and up) */
 @media only screen and (min-width: 560px) {
 	#home {
@@ -126,27 +114,12 @@ footer p {
 	#article-title {
 		font-size: 2.7em;
 	}
-	.project-links {
-		margin: 5% 0 0 0;
-	}
-	.project-links a {
-		max-width: 520px;
-	}
-	.project-box {
-		height: 75px;
-	}
-	.project-desc {
-		font-size: 1em;
-	}
-	.project-desc p {
-		max-width: 400px;
-	}
 	footer {
 		flex-flow: row;
 	}
 }
-/* Large devices (laptops/desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Large devices (laptops/desktops, 1000px and up) */
+@media only screen and (min-width: 1000px) {
 	nav {
 		width: 85%;
 	}
@@ -160,10 +133,14 @@ footer p {
 		margin: 1% 0 0 0;
 	}
 	.project-links {
-		margin: 0 0 0 10%;
+		flex-flow: column;
+		justify-content: left;
+		width: 90%;
+		margin: 3% 0 0 10%;
 	}
 	.project-box {
-		margin: 1% 0;
+		margin: 0;
+		width: 500px;
 	}
 	footer {
 		width: 85%;

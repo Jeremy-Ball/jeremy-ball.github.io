@@ -1,4 +1,4 @@
-/* Extra small devices (phones, 300px and down) */
+/* Extra small devices (phones, 300px and up) */
 html {
 	background-color: black;
 	color: white;
@@ -11,6 +11,7 @@ a {
 a:hover {
 	color: #6f64b4;
 }
+/* Container for Nav, Slideshow, Slideshow1, Footer */
 body {
 	display: flex;
 	flex-flow: row wrap;
@@ -19,6 +20,7 @@ body {
 	margin: 0 auto;
 	padding: 2%;
 }
+/* Top navigation bar */
 nav {
 	display: flex;
 	flex-flow: row;
@@ -38,14 +40,22 @@ nav {
 }
 * {box-sizing:border-box}
 
-/* Slideshow container */
+/* Slideshow container for images */
 .slideshow-container {
 	max-width: 600px;
 	max-height: 900px;
 	position: relative;
 	margin: 15% 0 0 0;
 }
-/* Slideshow container */
+.mySlides {
+	display: none;
+	padding: 0;
+}
+.mySlides img {
+	max-width: 100%;
+	margin: auto;
+}
+/* Slideshow container for text */
 .slideshow-container1 {
 	max-width: 600px;
 	height: 30%;
@@ -53,18 +63,9 @@ nav {
 	margin: 8% auto 0 auto;
 	padding: 2%;
 }
-/* Hide the images by default */
-.mySlides {
-	display: none;
-	padding: 0;
-}
 .mySlides1 {
 	display: none;
 	padding: 0;
-}
-.mySlides img {
-	max-width: 100%;
-	margin: auto;
 }
 .numberText {
 	color: #6f64b4;
@@ -105,7 +106,7 @@ nav {
   	from {opacity: .4}
   	to {opacity: 1}
 }
-/* END SLIDE SHOW */
+/* Text in slideshowcontainer1 */
 .article {
 	margin: 5% 0;
 }
@@ -113,6 +114,7 @@ nav {
 	line-height: 1.2;
 	color: darkgray;
 }
+/* Bottom nav arrows */
 .arrows {
 	display: flex;
 	flex-flow: row;
@@ -120,7 +122,7 @@ nav {
 	font-size: 1em;
 	width: 90%;
 	max-width: 600px;
-	margin: 0 auto;
+	margin: 15% auto;
 	padding: 0;
 }
 .arrows a {
@@ -191,7 +193,7 @@ footer p {
 		line-height: 1.5;
 	}
 	.arrows {
-		margin: 5% auto;
+		margin: 10% auto 0;
 		max-width: 70%;
 	}
 	footer {

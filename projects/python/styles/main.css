@@ -1,4 +1,4 @@
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 310px and up) */
 html {
 	background-color: black;
 	color: white;
@@ -39,22 +39,68 @@ nav {
 	margin: 0 8%;
 	font-weight: bold;
 }
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 600px;
+	position: relative;
+	margin: 15% 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  	display: none;
+  	padding: 0;
+}
+.mySlides img {
+	max-width: 100%;
+	margin: auto;
+	max-height: 500px;
+}
+.numberText {
+	font-size: .75em;
+	color: #6f64b4;
+	text-align: center;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 105%;
+  width: auto;
+  margin-top: -22px;
+  padding: 6px;
+  color: #6f64b4;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+	right: 0px;
+}
+/* Caption text */
+.text {
+ 	color: darkgray;
+ 	font-size: 15px;
+ 	width: 100%;
+ 	text-align: center;
+}
+/* Fading animation */
+.fade {
+  	animation-name: fade;
+  	animation-duration: 1.5s;
+}
+@keyframes fade {
+  	from {opacity: .4;}
+  	to {opacity: 1;}
+}
 .article {
-	display: flex;
-	flex-flow: column;
-	justify-content: left;
-	line-height: 1.2;
-	margin: 15% 0 0 0;
-	width: 100%;
-	padding: 2%;
+	margin: 5% 0;
 }
-#article-title {
-	margin: 0;
-	max-width: 560px;
-}
-#article-body{
-	margin: 5% 0 0 0;
-	max-width: 560px;
+.article p {
 	line-height: 1.5;
 	color: darkgray;
 }
@@ -63,13 +109,12 @@ nav {
 	flex-flow: column;
 	width: 100%;
 	margin: 10% 0 0 0;
-	padding: 2%;
 }
 .project-box a {
 	display: flex;
 	flex-flow: row;
 	align-items: center;
-	max-width: 500px;
+	max-width: 400px;
 	margin: 2.5% 0;
 	padding: 1%;
 	background-image: linear-gradient( to bottom right, #16171d, #2B2E3A );
@@ -108,14 +153,14 @@ footer p {
 	#home {
 		margin: 0 0 0 5%;
 	}
-	.article {
-		max-height: 500px;
-	}
-	#article-title {
-		font-size: 2.7em;
+	.slideshow-container {
+		margin: 10% auto 0 auto;
 	}
 	.project-links {
 		margin: 5% 0 0 0;
+	}
+	.project-box a {
+		margin: 1.5% 0;
 	}
 	footer {
 		flex-flow: row;
@@ -123,26 +168,48 @@ footer p {
 }
 /* Large devices (laptops/desktops, 1000px and up) */
 @media only screen and (min-width: 1000px) {
+	body {
+		flex-flow: row-reverse wrap;
+		align-items: center;
+	}
 	nav {
 		width: 85%;
 	}
 	.nav-links {
 		margin: 0 5% 0 0;
 	}
-	.article {
-		margin: 5% 0 0 10%;
+	.slideshow-container {
+		margin: 5% 0 0 5%;
+		width: 50%;
+		height: 500px;
 	}
-	#article-body{
-		margin: 1% 0 0 0;
+	/* Position the "next button" to the right */
+	.prev {
+		top: 50%;
+		left: -35px;
+	}
+	.next {
+		top: 50%;
+		right: -35px;
+	}
+	.article {
+		width: 35%;
+	}
+	.article h1 {
+
+	}
+	.article p {
+		line-height: 1.5;
+		color: darkgray;
 	}
 	.project-links {
-		flex-flow: column;
-		justify-content: left;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-around;
 		width: 90%;
-		margin: 3% 0 0 10%;
+		margin: 3% 0;
 	}
-	.project-box {
-		margin: 0;
+	.project-links a {
 		width: 500px;
 	}
 	footer {

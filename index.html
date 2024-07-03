@@ -1,117 +1,55 @@
-/* Extra small devices (phones, 300px and up) */
-html {
-	background-color: black;
-	color: white;
-	font-family: Arial, sans-serif;
-}
-a {
-	text-decoration: none;
-	color: white;
-}
-a:hover {
-	color: #6f64b4;
-}
-body {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	max-width: 2000px;
-	margin: 0 auto;
-	padding: 2%;
-}
-nav {
-	display: flex;
-	flex-flow: row;
-	justify-content: space-between;
-	align-items: center;
-	height: 70px;
-	width: 95%;
-	border-bottom: 1px solid #2B2E3A;
-}
-.nav-links {
-	width: 300px;
-}
-.nav-links p {
-	float: right;
-	margin: 0 8%;
-	font-weight: bold;
-}
-/*Styles for the main text */
-.article {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	line-height: 1.2;
-	max-width: 600px;
-	padding: 2%;
-	margin: 15% 0 0 0;
-}
-.article h1 {
-	max-width: 98%;
-}
-.article p {
-	max-width: 98%;
-	line-height: 1.5;
-	color: darkgray;
-}
-.article a {
-	font-size: 1.2em;
-	font-weight: bold;
-	max-height: 100%;
-	margin: 5% 0 0 0;
-}
-/*Styles for the large image */
-#main-image {
-	height: 600px;
-	width: 450px;
-}
-/*Styles for the footer */
-footer {
-	display: flex;
-	flex-flow: column;
-	height: 70px;
-	width: 95%;
-	margin: 10% 0 0 0;
-	border-top: 1px solid #2B2E3A;
-	font-size: .8em;
-}
-footer p {
-	margin: auto;
-	color: darkgray;
-}
-/* Medium devices (landscape tablets, 560px and up) */
-@media only screen and (min-width: 560px) {
-	#home {
-		margin: 0 0 0 5%;
-	}
-	.article {
-		margin: 5% 0 0 0;
-		max-width: 600px;
-	}
-	footer {
-		flex-flow: row;
-	}
-	#main-image {
-		margin: 5% 0;
-	}
-}
-/* Large devices (laptops/desktops, 1000px and up) */
-@media only screen and (min-width: 1000px) {
-	nav {
-		width: 85%;
-	}
-	.nav-links {
-		margin: 0 5% 0 0;
-	}
-	.article {
-		margin: 10% 0 0 0;
-		width: 45%;
-		height: 45%;
-	}
-	#main-image {
-		width: 45%;
-	}
-	footer {
-		width: 85%;
-	}
-}
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Jeremy Ball</title>
+		<link rel="shortcut icon" href="images\faviconliz.png">
+		<link rel="stylesheet" href="styles\main.css">
+	</head>
+	<body>
+		<nav>
+			<a id="home" href="index.html">
+			<svg width="50" height="50">
+				<image height="50" width="50" href="images\icon.svg"/>
+			</svg>
+			</a>
+			<div class="nav-links">
+				<p><a href="about/index.html">About</a></p>
+				<p><a href="projects/index.html">Projects</a></p>
+			</div>
+		</nav>
+		<div class="article">
+			<h1>Security focused software developer and web designer</h1>
+			<p>
+				My name is Jeremy Ball. I have an associate of science in Network Security - Risk Management. I'm a passionate programmer who is constantly working on projects in Python, 
+				Javascript, and HTML to better my skills.
+			</p>
+			<a href="https://github.com/Jeremy-Ball" target ="_blank">
+				Github
+			</a>
+			<a href="https://www.linkedin.com/in/jeremy-ball-37aba1141" target ="_blank">
+				LinkedIn
+			</a>
+			<a href="https://facebook.com/jeremy.ball.92505" target ="_blank">
+				Facebook</a>
+		</div>
+		<svg id="main-image" width="100" height="100">
+			<image width="100%" height="100%" href="images\tree.svg"/>
+		</svg>
+
+		<footer>
+			<p>&copy;2023 - 2024 Jeremy Ball</p>
+			<p>Icons created by <a href="https://iconsvg.co/profile/made" target ="_blank">Made</a></p>
+			<p>Design inspired by <a href="https://github.com/Evavic44/sanity-nextjs-site" target ="_blank">Viktor Eke</a></p>
+		</footer>
+	</body>
+</html>
+
+
+
+
+
+
+
